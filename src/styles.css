@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #ffffff;
+  background: linear-gradient(
+    348deg,
+    rgba(255, 255, 255, 1) 38%,
+    rgba(8, 31, 37, 0.33) 39%,
+    rgba(8, 145, 178, 1) 35%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.main-container .image-wrapper {
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.201);
+  z-index: 1;
+}
+
+.main-container .image-wrapper h1 {
+  position: relative;
+  top: -340px;
+  left: 200px;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+
+.about-me-wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.201);
+  background-color: #ffffff;
+}
+
+.about-me-title {
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-start;
+  margin: 40px;
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.about-me-paragraph {
+  width: fit-content;
+  height: fit-content;
+  line-height: 25px;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.724);
+  letter-spacing: 0.5px;
+  margin: 40px;
+  margin-top: 30px;
+}
+
+.social-tag-wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 15px;
+  margin: 20px;
+  align-self: flex-end;
+}
+
+.social-tag-wrapper i {
+  font-size: x-large;
+}
