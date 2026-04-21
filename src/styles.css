@@ -7,7 +7,7 @@ body {
 
 .main-section {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
   background: #ffffff;
   background: linear-gradient(
@@ -58,6 +58,7 @@ body {
   margin: 40px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
 }
 
 .about-me-paragraph {
@@ -82,4 +83,86 @@ body {
 
 .social-tag-wrapper i {
   font-size: x-large;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.title-project-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.my-work-title {
+  width: 100%;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+.project-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 35px;
+  row-gap: 50px;
+}
+
+.project-wrapper {
+  width: 350px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.201);
+}
+
+.project-wrapper img {
+  width: 350px;
+  height: 250px;
+}
+
+.project-title-social-tag-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.project-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.pro-social-tag-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.pro-social-tag-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+.pro-social-tag-wrapper i {
+  font-size: 24px;
+}
+
+.pro-social-tag-wrapper a {
+  text-decoration: none;
+}
+
+.project-description {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.573);
+  letter-spacing: 1px;
+  padding: 15px;
+  padding-top: 0;
 }
