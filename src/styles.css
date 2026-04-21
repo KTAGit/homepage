@@ -113,6 +113,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   column-gap: 35px;
   row-gap: 50px;
+  margin-bottom: 30px;
 }
 
 .project-wrapper {
@@ -165,4 +166,73 @@ body {
   letter-spacing: 1px;
   padding: 15px;
   padding-top: 0;
+}
+
+.contact-section {
+  width: 100%;
+  background-color: rgba(8, 145, 178, 1);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.get-in-touch {
+  line-break: auto;
+}
+
+.address {
+  margin-top: 30px;
+}
+
+.contact-section img {
+  width: 500px;
+  height: 350px;
+  margin: 50px;
+}
+
+.contact-me-title {
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.contact-info-container {
+  font-family: "Inter", sans-serif;
+  color: #ffffffc6;
+  margin: 50px;
+}
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  p {
+    margin: 0;
+  }
+}
+
+.email-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contact-info-container svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  fill: white;
+}
+
+.social-tag-wrapper-footer i {
+  font-size: x-large;
+  margin: 5px;
 }
