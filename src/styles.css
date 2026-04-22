@@ -317,3 +317,57 @@ body {
     height: 60px;
   }
 }
+
+@media (max-width: 831px) {
+  .main-section {
+    padding-top: 10px;
+    background: #ffffff;
+    background: linear-gradient(
+      338deg,
+      rgba(255, 255, 255, 1) 68%,
+      rgba(8, 31, 37, 0.33) 69%,
+      rgba(8, 145, 178, 1) 65%
+    );
+  }
+
+  .name {
+    top: 350px;
+    left: 0px;
+  }
+
+  .about-me-title {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    background-color: transparent;
+    align-content: center;
+  }
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .main-container {
+  }
+
+  .about-me-wrapper img {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .about-me-paragraph {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .social-tag-wrapper {
+    width: 100%;
+    box-shadow: none;
+    justify-content: center;
+    padding: 0;
+  }
+}
