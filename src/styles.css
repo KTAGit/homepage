@@ -116,25 +116,27 @@ body {
 }
 
 .title-project-wrapper {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  align-items: center;
 }
 
 .my-work-title {
-  width: 100%;
+  width: 90%;
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
+  text-indent: 40px;
 }
 
 .project-container {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   column-gap: 35px;
   row-gap: 50px;
   margin-bottom: 30px;
+  justify-items: center;
 }
 
 .project-wrapper {
