@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .main-section {
@@ -21,68 +22,88 @@ body {
 }
 
 .main-container {
-  width: fit-content;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
   padding-bottom: 100px;
 }
 
-.main-container .image-wrapper {
-  height: 500px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.201);
+.about-me-wrapper img {
   z-index: 1;
+  object-fit: fill;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.201);
 }
 
-.main-container .image-wrapper h1 {
-  position: relative;
-  top: -340px;
-  left: 200px;
+.about-me-wrapper h1 {
+  z-index: 2;
+  grid-column: 1 / 2;
+  grid-row: 5/ 6;
   font-family: "Playfair Display", serif;
   color: #ffffff;
+  margin: 0;
+  text-align: center;
 }
 
 .about-me-wrapper {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.201);
+  display: grid;
+  grid-template-columns: 500px 570px;
+  grid-template-rows: 50px 80px 210px 50px 50px;
   background-color: #ffffff;
+  align-items: center;
+  background-color: transparent;
 }
 
 .about-me-title {
-  width: fit-content;
-  height: fit-content;
-  align-self: flex-start;
-  margin: 40px;
-  margin-bottom: 0;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 2/ 3;
+  margin: 0;
+  display: flex;
+  align-items: center;
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.201);
+  text-indent: 30px;
 }
 
 .about-me-paragraph {
-  width: fit-content;
-  height: fit-content;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 3/ 4;
+  display: flex;
   line-height: 25px;
   font-family: "Inter", sans-serif;
   color: rgba(0, 0, 0, 0.724);
   letter-spacing: 0.5px;
-  margin: 40px;
-  margin-top: 30px;
+  margin: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 10px 5px rgba(0, 0, 0, 0.201);
+  padding: 30px;
 }
 
 .social-tag-wrapper {
-  width: fit-content;
-  height: fit-content;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 4/ 5;
   display: flex;
+  justify-content: end;
   gap: 15px;
-  margin: 20px;
-  align-self: flex-end;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.201);
+  padding-right: 40px;
 }
 
 .social-tag-wrapper i {
   font-size: x-large;
+}
+
+.social-tag-wrapper:nth-last-child(1) {
+  /* margin-right: 20px; */
 }
 
 .project-section {
@@ -235,4 +256,62 @@ body {
 .social-tag-wrapper-footer i {
   font-size: x-large;
   margin: 5px;
+}
+
+.social-tag-wrapper-footer .devicon-github-original {
+  margin-left: 0;
+}
+
+@media (max-width: 1168px) {
+  .about-me-wrapper {
+    display: block;
+  }
+
+  .name {
+    float: right;
+    position: relative;
+    top: 60px;
+    right: 250px;
+    width: fit-content;
+  }
+
+  .about-me-title {
+    height: 50px;
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    text-indent: 0;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  .about-me-wrapper {
+    display: block;
+    width: 80%;
+  }
+
+  .main-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .about-me-wrapper img {
+    position: relative;
+    left: -30px;
+    float: left;
+    width: 360px;
+    height: 350px;
+    margin: 0 0em 5px 0em;
+  }
+
+  .about-me-paragraph {
+    display: block;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .social-tag-wrapper {
+    height: 60px;
+  }
 }
